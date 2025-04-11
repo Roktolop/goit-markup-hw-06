@@ -289,6 +289,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .our-team .list .list-item {
@@ -812,7 +813,6 @@ img {
   .our-team-container-list {
     row-gap: 64px;
     column-gap: 24px;
-    justify-content: center;
   }
 
   .our-team-container-list .list-item {
@@ -859,7 +859,6 @@ img {
 
   .our-team-container-list {
     gap: 24px;
-    justify-content: center;
     flex-wrap: nowrap;
   }
 }
