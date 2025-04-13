@@ -48,7 +48,6 @@ img {
 .container {
   width: 288px;
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 .visually-hidden {
@@ -68,7 +67,6 @@ img {
   font-weight: 700;
   font-size: 36px;
 
-  /* line-height: 40px; */
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -360,33 +358,30 @@ img {
 /* section Our Portfolio */
 
 .our-portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .our-portfolio .container .section-title {
   margin-bottom: 72px;
 }
 
-.our-portfolio .container .list {
+.our-portfolio .container .our-portfolio-container-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 
-.our-portfolio .container .list .list-item {
-  flex-basis: calc((100% - 48px) / 3);
+.our-portfolio-container-list .list-item {
   position: relative;
-  min-width: 360px;
-  min-height: 420px;
+  width: 100%;
 }
 
-.our-portfolio .container .list .list-item:hover {
+.our-portfolio-container-list .list-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.our-portfolio .container .list .list-item {
+.our-portfolio-container-list .list-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -811,12 +806,20 @@ img {
 
   /* Our-team */
   .our-team-container-list {
-    row-gap: 64px;
-    column-gap: 24px;
   }
 
   .our-team-container-list .list-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* Our portfolio */
+  .our-portfolio .container .our-portfolio-container-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .our-portfolio-container-list .list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    max-width: 356px;
   }
 }
 
@@ -860,5 +863,15 @@ img {
   .our-team-container-list {
     gap: 24px;
     flex-wrap: nowrap;
+  }
+
+  /* Our portfolio */
+  .our-portfolio .container .our-portfolio-container-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .our-portfolio-container-list .list-item {
+    flex-basis: calc((100% - 48px) / 3);
+    max-width: 360px;
   }
 }
