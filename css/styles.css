@@ -21,6 +21,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -221,7 +223,6 @@ img {
   font-weight: 500;
   font-size: 16px;
 
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -426,16 +427,24 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer .container {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 72px;
 }
 
 .footer-logo-text-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .footer-logo-text-container .logo {
@@ -449,16 +458,21 @@ img {
 }
 
 .footer-logo-text-container .text {
-  max-width: 264px;
+  width: 100%;
+  /* max-width: 264px; */
+}
+
+.footer-social-media-container {
+  /* margin-right: 80px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-social-media-list {
   display: flex;
+  align-items: center;
   gap: 16px;
-}
-
-.footer-social-media-container {
-  margin-right: 80px;
 }
 
 .footer-social-media-container .text {
@@ -478,6 +492,12 @@ img {
   background-color: #31d0aa;
 }
 
+.footer-subscribe-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .footer-subscribe-panel .text {
   font-weight: 500;
   font-size: 16px;
@@ -489,6 +509,8 @@ img {
 
 .footer-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -821,6 +843,25 @@ img {
     flex-basis: calc((100% - 24px) / 2);
     max-width: 356px;
   }
+
+  /* footer */
+  footer .container {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer-logo-text-container {
+    justify-content: flex-start;
+    width: 264px;
+  }
+
+  .footer-social-media-container {
+    flex-direction: column;
+  }
+
+  .footer-subscribe-panel {
+    flex-direction: column;
+  }
 }
 
 /* for desctops */
@@ -866,12 +907,25 @@ img {
   }
 
   /* Our portfolio */
+  .our-portfolio {
+    padding: 120px 0;
+  }
+
   .our-portfolio .container .our-portfolio-container-list {
     column-gap: 24px;
     row-gap: 48px;
   }
+
   .our-portfolio-container-list .list-item {
-    flex-basis: calc((100% - 48px) / 3);
     max-width: 360px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    gap: 72px;
   }
 }
