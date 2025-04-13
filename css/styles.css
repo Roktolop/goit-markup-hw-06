@@ -823,8 +823,6 @@ img {
   }
 
   /* Our-team */
-  .our-team-container-list {
-  }
 
   .our-team-container-list .list-item {
     flex-basis: calc((100% - 24px) / 2);
