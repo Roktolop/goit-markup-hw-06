@@ -831,7 +831,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 
   /* header */
@@ -991,7 +991,7 @@ button {
   /* backdrop */
   .modal {
     width: 408px;
-    min-height: 584px;
+    height: 584px;
 
     padding-top: 72px;
     padding-left: 24px;
