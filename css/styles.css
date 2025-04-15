@@ -244,9 +244,9 @@ button {
 /* section Title */
 
 .hero {
-  max-height: 600px;
-  max-width: 1440px;
-  padding: 188px 0;
+  min-height: 422px;
+  min-width: 320px;
+  padding: 72px 0;
 
   display: flex;
   background-color: #2e2f42;
@@ -263,18 +263,17 @@ button {
 
 .title {
   font-weight: 700;
-  font-size: 56px;
-  min-width: 496px;
+  font-size: 36px;
+  min-width: 216px;
 
-  /* line-height: 60px; */
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .title-button {
@@ -917,6 +916,23 @@ button {
     color: #404bbf;
   }
 
+  /* Title */
+  .hero {
+    min-height: 436px;
+    min-width: 768px;
+    padding: 112px 0;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 56px;
+    min-width: 496px;
+
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
   /* Benefits */
   .benefits .container .list {
     gap: 24px;
@@ -987,6 +1003,17 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+
+  /* tittle */
+  .hero {
+    min-width: 1440px;
+    min-height: 600px;
+    padding: 188px 0;
+  }
+
+  .title {
+    margin-bottom: 48px;
   }
 
   /* benefits */
