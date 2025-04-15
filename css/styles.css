@@ -617,14 +617,14 @@ button {
 
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 24px;
   border-radius: 4px;
 
@@ -696,24 +696,12 @@ button {
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 256px;
   height: 40px;
-  padding: 8px 38px;
+  padding: 11px 34px;
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:focus {
-  border-color: #4d5ae5;
-}
-
-.modal-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:focus + .modal-icon {
-  fill: #4d5ae5;
 }
 
 .modal-label {
@@ -727,8 +715,23 @@ button {
 }
 
 .modal-user-comment {
-  width: 360px;
+  display: block;
+  padding: 8px 16px;
+  width: 256px;
   min-height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  resize: none;
+}
+
+.modal-user-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-user-comment::placeholder {
@@ -769,26 +772,6 @@ button {
   margin: 0 auto;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-user-comment {
-  display: block;
-  padding: 8px 16px;
-  width: 360px;
-  min-height: 120px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-  resize: none;
-}
-
-.modal-user-comment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-check {
@@ -978,6 +961,29 @@ button {
   .footer-subscribe-panel {
     flex-direction: column;
   }
+
+  /* backdrop */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-input {
+    width: 360px;
+    height: 40px;
+    padding: 11px 34px;
+  }
 }
 
 /* for desctops */
@@ -1126,6 +1132,41 @@ button {
 
   .footer-social-media-container {
     margin-right: 80px;
+  }
+
+  /* backdrop */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-input {
+    width: 360px;
+    height: 40px;
+    padding: 11px 38px;
+  }
+
+  .modal-input:focus {
+    border-color: #4d5ae5;
+  }
+
+  .modal-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
   }
 }
 
