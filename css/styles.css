@@ -51,7 +51,7 @@ button {
 }
 
 .container {
-  width: 320px;
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -254,11 +254,21 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Background-image/people-office.jpg);
+    url(../images/Background-image/hero-bg-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media screen and (min-resolution: 2x) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Background-image/hero-bg-mob2x.jpg);
+  }
 }
 
 .title {
@@ -821,7 +831,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 
   /* header */
@@ -904,6 +914,22 @@ button {
     min-height: 436px;
     min-width: 768px;
     padding: 112px 0;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Background-image/hero-bg-tab.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Background-image/hero-bg-tab2x.jpg);
+    }
   }
 
   .title {
@@ -990,7 +1016,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    min-width: 1158px;
     padding: 0 15px;
   }
 
@@ -1016,6 +1042,22 @@ button {
     min-width: 1440px;
     min-height: 600px;
     padding: 188px 0;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Background-image/hero-bg.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Background-image/hero-bg2x.jpg);
+    }
   }
 
   .title {
