@@ -442,6 +442,7 @@ button {
 .our-portfolio .container .our-portfolio-container-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
 }
 
