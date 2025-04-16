@@ -395,7 +395,6 @@ button {
   font-weight: 500;
   font-size: 20px;
 
-  /* line-height: 24px; */
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -464,6 +463,13 @@ button {
 }
 
 .our-portfolio .app-info .subsection-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: start;
+  color: #2e2f42;
+
   margin-bottom: 8px;
 }
 
@@ -967,6 +973,11 @@ button {
 
   /* Our-team */
 
+  .our-team-container-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
   .our-team-container-list .list-item {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -1085,6 +1096,10 @@ button {
   .benefits .container .list {
     gap: 24px;
     flex-wrap: nowrap;
+  }
+
+  .benefits .container .list .list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
   .banefits-list-item-icon-container {
