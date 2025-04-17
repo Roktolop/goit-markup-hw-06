@@ -96,6 +96,10 @@ button {
   text-decoration: none;
 }
 
+.subsection-title {
+  font-style: normal;
+}
+
 /* header  */
 
 .header {
@@ -1127,6 +1131,16 @@ button {
     margin-bottom: 8px;
   }
 
+  .benefits .container .list .list-item .subsection-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: start;
+  }
+
+  .benefits .container .list-item .text {
+    font-weight: 400;
+    font-size: 16px;
+  }
   /* Our-team */
   .our-team {
     padding: 120px 0;
